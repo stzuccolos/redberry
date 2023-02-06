@@ -5,15 +5,26 @@
   height: 48px;
 
   background: #ffffff;
+  
   border: 1px solid #bcbcbc;
   border-radius: 4px;
+  padding: 10px;
 
   flex: none;
   order: 0;
   align-self: stretch;
   flex-grow: 0;
+  transition: all 0.2s ease-in-out;
 }
 
 .input-field:focus{
-  border: 2px;
+  outline: none;
+}
+
+.input-field.invalid {
+  border: 1px solid #ef5050;
+}
+
+.input-field.valid{
+  border: 1px solid #98e37e
 }
